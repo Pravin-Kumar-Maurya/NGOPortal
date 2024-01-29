@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}
+      our couses
+      {% endblock %}
+    </title>
+</head>
+<body>
+{% block x %}
+<div class="row bg-light">
+<h1 class="text-center">Our <b class="text-mycolor">Causes</b></h1>
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 bg-white rounded px-5 py-4 mb-5">
+        <div class="row my-2">
+            <div class="col-sm-6">
+                <div class="card">
+  <img src="{% static 'images/shel.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h1>Shelter for Refugees<b class="text-mycolor">Hungry</b></h1>
+      Introduction: An ordinary individual cannot even think about the life of the displaced people. Despair is everywhere.
+      The makeshift provision of food, water and shelter is never sufficient enough in providing relief to the people.
+      The design of a shelter city is the basic necessity in times of crisis. Whether there is a natural disaster
+      in Mexico or human engineered catastrophe in Burma people are chased by misery. How can they evade this?
+      The source that provide the resource may be… </p>
+  </div>
+</div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" >
+  <img src="{% static 'images/food.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h1>Food for<b class="text-mycolor">Hungry</b></h1>
+      Did you know that more than 800 million people in the world don’t get enough to eat each day? That’s a shocking number. What’s even more shocking is that the world actually produces enough food to nourish each and every one of those children, women, and men.
+In fact, globally, we humans grow—and throw away—enough extra food to feed two billion people—more than twice the number of those families going without meals.Obviously, global hunger is not about a lack of food! The earth is a good and generous home.</p>
+  </div>
+</div>
+            </div>
+            </div>
+         <div class="row">
+            <div class="col-sm-6">
+                <div class="card" >
+  <img src="{% static 'images/gift.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h1>Gifts For<b class="text-mycolor">Oprhans</b></h1>
+      Children without families are the most vulnerable people in the entire world. The hunger for love is more
+      terrible than the hunger for food. We can really understand the pain of the orphans but we can at least
+      do something to make them happy. They wouldn’t have parents to shower them with gifts for special occasions and
+      festivals and so we must pamper them with love and gifts for special occasions and days. You cannot really adopt
+      all the orphans but what least we can do is give them the warmth we receive from our parents and shower them with
+      love and affection. If we are fortunate enough to have extra bread at a meal we can donate it to these little
+      ones, we can also give them gifts and make sweet gestures to bring happiness to them. Thus we are here with
+      some charity gift ideas to bring a big smile to orphan children.</p>
+  </div>
+</div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+  <img src="{% static 'images/edu.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h1>Education For<b class="text-mycolor">Childeran</b></h1>
+      There will always be inequality in children’s educational achievements, but our new study argues that we should
+      look to the countries with the smallest gaps between the best- and worst-performing students, as some of these
+      countries can show us how to achieve the best of both worlds: low inequality and high standards. Our report ranks
+      EU and OECD countries on a measure of inequality in educational achievement ­— the gap between the 10th and 90th
+      percentiles of reading scores at age 15.</p>
+  </div>
+</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+{% endblock %}
+</body>
+</html>
